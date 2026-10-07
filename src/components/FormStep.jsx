@@ -3,6 +3,12 @@
 // This component renders a single question.
 // It receives the question data, the current answer, and a callback
 // to report when the user changes their answer.
+//
+// Props:
+//   - question: the question object from questions.js
+//   - answer: the current answer for this question
+//   - onChange: function to call when the answer changes
+//   - error: error message for this question (or null)
 // ============================================
 
 function FormStep({ question, answer, onChange, error }) {

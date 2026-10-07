@@ -2,6 +2,7 @@
 // ELIGIBILITY LOGIC
 // This is a PURE FUNCTION — it takes answers in and returns results out.
 // It has no side effects and doesn't touch the DOM.
+// This makes it easy to test (which we do in eligibility.test.js).
 //
 // The function checks the user's answers against real Council Tax
 // discount rules and returns an array of discounts they may qualify for.

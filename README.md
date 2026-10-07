@@ -1,16 +1,58 @@
-# React + Vite
+# Council Tax Discount Eligibility Checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A GOV.UK-style web application that helps users check if they might be eligible
+for a Council Tax discount. Built as a prototype to demonstrate user-centred
+design, accessible forms, conditional logic and testing.
 
-Currently, two official plugins are available:
+## Live demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://github.com/jordanjjy9819-debug/council-tax-checker/tree/main/src
 
-## React Compiler
+## User need
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Many people are unaware they might qualify for a Council Tax discount. This
+tool guides users through a short questionnaire and provides an indicative
+result, signposting them to their local council to apply.
 
-## Expanding the ESLint configuration
+## Tech stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** (via Vite) — UI framework
+- **JavaScript** — programming language
+- **CSS** — GOV.UK Design System patterns and styling
+- **Vitest** — unit testing
+
+## Features
+
+- Multi-step form with one question per page (GOV.UK pattern)
+- Conditional logic — questions adapt based on previous answers
+- Input validation with accessible error messages
+- Results page with clear discount information and disclaimers
+- Responsive design for mobile and desktop
+- GOV.UK Design System styling and patterns
+- Unit tests for eligibility logic
+
+## How to run locally
+
+### Prerequisites
+
+- Node.js 18 or higher
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/YOUR-USERNAME/council-tax-checker.git
+cd council-tax-checker
+npm install
+npm run dev
+```
+
+Open http://localhost:5173 in your browser.
+
+### Run tests
+
+```bash
+npm test
+```
+
+## Project structure
